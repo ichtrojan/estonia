@@ -1,0 +1,54 @@
+{
+    "city": "Düsseldorf",
+    "id": 15475,
+    "hotels": {
+        "1": {
+            "name": "Hilton Düsseldorf",
+            "adr": "Georg-Glock-Straße 20, 40474 Düsseldorf",
+            "partners": {
+                "101": {
+                    "name": "Booking.com",
+                    "url": "http://www.booking.com",
+                    "prices": {
+                        "1001": {
+                            "description": "Single Room",
+                            "amount": 125,
+                            "from": "2012-10-12",
+                            "to": "2012-10-13"
+                        },
+                        "1002": {
+                            "description": "Double Room",
+                            "amount": 139,
+                            "from": "2012-10-12",
+                            "to": "2012-10-13"
+                        }
+                    }
+                }
+            }
+        },
+        "2": {
+            "name": "Mercure DüsseldorfCity Nord",
+            "adr": "Nördlicher Zubringer 7, 40470 Düsseldorf",
+            "partners": {
+                "201": {
+                    "name": "Booking.com",
+                    "url": "http://www.booking.com",
+                    "prices": {
+                        "2001": {
+                            "description": "Single Room",
+                            "amount": 52,
+                            "from": "2012-10-12",
+                            "to": "2012-10-13"
+                        },
+                        "2002": {
+                            "description": "Double Room",
+                            "amount": 52,
+                            "from": "2012-10-12",
+                            "to": "2012-10-13"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

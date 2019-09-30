@@ -1,0 +1,28 @@
+{
+    "name": "cashongo/recruiting",
+    "description": "This is the cashongo recruiting test. This source is for a restricted audience and you are not allowed to pass it to other people without permission.",
+    "authors": [
+        {
+            "name": "Vova Lando",
+            "email": "vova.lando@cashongo.co.uk"
+        }
+    ],
+
+    "config": {
+        "bin-dir": "bin"
+    },
+
+    "autoload": {
+        "psr-0": {
+            "COG\\Recruiting": "src/"
+        }
+    },
+
+    "require": {
+        "phpunit/phpunit": "3.7.*",
+        "phpunit/php-invoker" : "^1.1.0@stable",
+        "mikey179/vfsstream": "1.1.0"
+    },
+
+    "minimum-stability": "dev"
+}
