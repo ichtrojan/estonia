@@ -16,11 +16,11 @@ class UnorderedHotelService implements HotelServiceInterface
 
     /**
      * Maps from city name to the id for the partner service.
-     *  
+     *
      * @var array
      */
     private $cityToIdMapping = array(
-            "Düsseldorf" => 14575
+            "Düsseldorf" => 15475
         );
 
     /**
@@ -42,6 +42,9 @@ class UnorderedHotelService implements HotelServiceInterface
         }
 
         $cityId = $this->cityToIdMapping[$cityName];
+
         $partnerResults = $this->partnerService->getResultForCityId($cityId);
+
+        return $partnerResults;
     }
 }

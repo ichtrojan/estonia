@@ -3,7 +3,7 @@ namespace COG\Recruiting\Entity;
 
 /**
  * Represents a single partner from a search result.
- * 
+ *
  * @author vovke
  */
 class Partner
@@ -16,16 +16,23 @@ class Partner
 
     /**
      * Url of the partner's homepage (root link)
-     * 
+     *
      * @var string
      */
     public $homepage;
 
     /**
-     * Unsorted list of prices received from the 
+     * Unsorted list of prices received from the
      * actual search query.
-     * 
+     *
      * @var Price[]
      */
     public $prices = array();
+
+    public function __construct($name, $homepage, $prices = [])
+    {
+        $this->name = $name;
+        $this->homepage = $homepage;
+        $this->prices = $prices;
+    }
 }

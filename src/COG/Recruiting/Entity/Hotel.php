@@ -6,7 +6,7 @@ namespace COG\Recruiting\Entity;
  *
  * @author vovke
  */
-class Hotel 
+class Hotel
 {
     /**
      * Name of the hotel.
@@ -17,15 +17,22 @@ class Hotel
 
     /**
      * Street adr. of the hotel.
-     * 
+     *
      * @var string
      */
     public $adr;
 
     /**
      * Unsorted list of partners with their corresponding prices.
-     * 
+     *
      * @var Partner[]
      */
     public $partners = array();
+
+    public function __construct($name, $adr, $partners = [])
+    {
+        $this->name = $name;
+        $this->adr = $adr;
+        $this->partners = $partners;
+    }
 }
