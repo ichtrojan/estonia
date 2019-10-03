@@ -42,6 +42,10 @@ class Price
      */
     public $toDate;
 
+    /**
+     * @param array $attributes
+     * @return static
+     */
     public static function make(array $attributes)
     {
         $price = new static;

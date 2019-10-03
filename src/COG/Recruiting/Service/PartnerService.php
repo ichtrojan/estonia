@@ -6,6 +6,7 @@ use COG\Recruiting\Entity\Hotel;
 use COG\Recruiting\Entity\Partner;
 use COG\Recruiting\Entity\Price;
 use COG\Recruiting\Validators\URLValidator;
+use COG\Recruiting\Interfaces\PartnerServiceInterface;
 
 class PartnerService implements PartnerServiceInterface
 {

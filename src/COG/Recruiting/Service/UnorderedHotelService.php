@@ -1,5 +1,10 @@
 <?php
+
 namespace COG\Recruiting\Service;
+
+use COG\Recruiting\Interfaces\PartnerServiceInterface;
+use COG\Recruiting\Interfaces\HotelServiceInterface;
+
 
 /**
  * This class is an (unfinished) example implementation of an unordered hotel service.
@@ -20,8 +25,8 @@ class UnorderedHotelService implements HotelServiceInterface
      * @var array
      */
     private $cityToIdMapping = array(
-            "Düsseldorf" => 15475
-        );
+        "Düsseldorf" => 15475
+    );
 
     /**
      * @param PartnerServiceInterface $partnerService

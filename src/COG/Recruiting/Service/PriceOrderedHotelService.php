@@ -1,8 +1,8 @@
 <?php
 
-
 namespace COG\Recruiting\Service;
 
+use COG\Recruiting\Interfaces\PartnerServiceInterface;
 
 class PriceOrderedHotelService extends UnorderedHotelService
 {

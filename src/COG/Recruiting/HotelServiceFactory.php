@@ -2,7 +2,7 @@
 
 namespace COG\Recruiting;
 
-use COG\Recruiting\Service\HotelServiceInterface;
+use COG\Recruiting\Interfaces\HotelServiceInterface;
 use COG\Recruiting\Service\PartnerNameOrderedHotelService;
 use COG\Recruiting\Service\PartnerService;
 use COG\Recruiting\Service\PriceOrderedHotelService;

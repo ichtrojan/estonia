@@ -1,4 +1,5 @@
 <?php
+
 namespace COG\Recruiting\Entity;
 
 /**
@@ -29,6 +30,12 @@ class Partner
      */
     public $prices = array();
 
+    /**
+     * Partner constructor.
+     * @param $name
+     * @param $homepage
+     * @param array $prices
+     */
     public function __construct($name, $homepage, $prices = [])
     {
         $this->name = $name;

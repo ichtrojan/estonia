@@ -1,4 +1,5 @@
 <?php
+
 namespace COG\Recruiting\Entity;
 
 /**
@@ -29,6 +30,12 @@ class Hotel
      */
     public $partners = array();
 
+    /**
+     * Hotel constructor.
+     * @param $name
+     * @param $adr
+     * @param array $partners
+     */
     public function __construct($name, $adr, $partners = [])
     {
         $this->name = $name;
