@@ -23,12 +23,12 @@ class PartnerService implements PartnerServiceInterface
         $results = $this->loadHotelResultsForCity($cityId);
         $hotels = $this->createHotelEntitiesFromHotels(array_values($results['hotels']));
 
-        print_r($hotels);
+        return $hotels;
     }
 
     protected function loadHotelResultsForCity($cityID)
     {
-        return json_decode(file_get_contents(__DIR__ . "/../../../../data/15475.json"), true);
+        return json_decode(file_get_contents(__DIR__ . "/../../../../data/15475.json"), true) ?? [];
     }
 
     protected function createPriceEntitiesFromPrices(array $prices): array
